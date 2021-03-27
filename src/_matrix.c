@@ -1,7 +1,7 @@
 ﻿/******************************************************************************* 
 * This file is a matrix library / header for assginment                        *
 *                                                                              *
-* Made by Gibartes                                  *
+* Made by Gibartes                                                             *
 *                                                                              *
 *******************************************************************************/
 
@@ -17,7 +17,7 @@
 #ifndef __MATRIX_H__
 #define QUADRIC 3
 #define S_CUBIC 4
-#define private static
+#define private static inline
 #ifdef _MSC_VER
 #define public __declspec(dllexport)
 #else
