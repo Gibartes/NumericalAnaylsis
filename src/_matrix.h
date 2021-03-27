@@ -25,38 +25,38 @@
 /******************************************************************************* 
 * This file is a matrix library / header for assginment                        *
 *                                                                              *
-* Made by Gibartes                                    *
+* Made by Gibartes                                                             *
 *                                                                              *
 *******************************************************************************/
 
 /* -------------------------------------------------------------------------- */
 
 typedef struct __vector{
-	unsigned int dim;		/* the number of valid ingredients										*/
-	unsigned int max;		/* reseved. max capacity of vector  (dim <= max. default dim=max) 	*/
-	double *element;		/* element array in vector											*/
-	int flag;				/* reseved. (do not change this)									*/
+    unsigned int dim;		/* the number of valid ingredients							        */
+    unsigned int max;		/* reseved. max capacity of vector  (dim <= max. default dim=max) 	*/
+    double *element;		/* element array in vector											*/
+    int flag;				/* reseved. (do not change this)									*/
 }Vector, *pVector;
 
 typedef struct __result{
-	unsigned int flg;		/* error flag or index flag */
-	double value;			/* return value */
-	double error;			/* error value */
-	void *ptr;				/* return pointer */
+    unsigned int flg;		/* error flag or index flag */
+    double value;			/* return value */
+    double error;			/* error value */
+    void *ptr;				/* return pointer */
 }result;
 
 typedef struct __solution{
-	unsigned int dim;		/* dimension of solution */
-	Vector *index;			/* ingredient initial position of solution */
-	Vector *solution;		/* solution vector  */
+    unsigned int dim;		/* dimension of solution */
+    Vector *index;			/* ingredient initial position of solution */
+    Vector *solution;		/* solution vector  */
 }Solution;
 
 typedef struct _Poly {
-	double  c;
-	int 	e;
-	char	symbol;
-	int 	overwrite;
-	struct _Poly *link;
+    double  c;
+    int 	e;
+    char	symbol;
+    int 	overwrite;
+    struct _Poly *link;
 }Poly;
 /* -------------------------------------------------------------------------- */
 
